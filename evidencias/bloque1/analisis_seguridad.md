@@ -56,3 +56,29 @@ de privilegios.
 ---
 ## 5. Accesos a módulos
 
+Se revisó la visibilidad y acceso a los principales módulos del sistema.
+| Usuario / Perfil | Módulos accesibles | Valoración |
+|------------------|--------------------|-----------|
+| Administrador | Ajustes, Ventas, CRM, Facturación, Inventario, Compras | Esperado |
+| Comercial | CRM, Ventas, Clientes | Correcto |
+| Contable | Facturación, Contabilidad | Correcto |
+| Soporte | Soporte / módulos internos asignados | Revisar que no acceda a Ajustes o Contabilidad |
+### Observaciones
+El acceso a módulos sensibles como Ajustes o Contabilidad debe estar restringido. La presencia de módulos innecesarios visibles para perfiles básicos se considera una mala práctica.
+---
+## 6. Riesgos detectados
+Durante el análisis se identifican los siguientes riesgos potenciales:
+1. **Exceso de privilegios** en algunos perfiles si acumulan varios grupos.
+2. **Uso de cuentas administrativas** para tareas cotidianas.
+3. **Falta de segregación de funciones** entre áreas como ventas, soporte y contabilidad.
+4. **Posibles cuentas antiguas o de prueba activas**.
+5. **Acceso a módulos sensibles** por usuarios que no lo necesitan.
+---
+## 7. Configuraciones incorrectas detectadas
+Se detectan o se deben revisar las siguientes configuraciones:
+- Asignación de permisos demasiado amplios a determinados usuarios.
+- Posible acceso indebido al módulo Ajustes.
+- Falta de revisión periódica de usuarios activos.
+- Estructura de grupos mejorable para separar funciones.
+
+---
