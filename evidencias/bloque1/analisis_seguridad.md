@@ -82,3 +82,6 @@ Se detectan o se deben revisar las siguientes configuraciones:
 - Estructura de grupos mejorable para separar funciones.
 
 ---
+
+## 8. Conclusión final
+La configuración de seguridad del sistema presenta una base funcional, pero requiere revisión para asegurar una asignación correcta de permisos y accesos. Se recomienda aplicar el principio de mínimo privilegio, limitar el uso de cuentas administrativas, revisar cuentas activas y reforzar la separación de funciones entre perfiles del sistema.
